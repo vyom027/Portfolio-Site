@@ -4,6 +4,11 @@
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>Vivek Prajapati — Developer</title>
+<meta name="description" content="Portfolio of Vivek Prajapati, a Full-stack Developer and Systems Engineer specialized in Python, Django, Kotlin, and Windows APIs.">
+<meta property="og:title" content="Vivek Prajapati — Developer">
+<meta property="og:description" content="Full-stack Developer focused on structured systems and clean code.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://github.com/vyom027/Portfolio-Site">
 <link rel="icon" type="image/svg+xml" href="favicon.svg"/>
 <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet"/>
 <style>
@@ -237,6 +242,7 @@ footer{text-align:center;padding:2.5rem 5vw;border-top:1px solid var(--border);f
       <div class="hero-cta">
         <a href="#projects" class="btn btn-primary">View Projects</a>
         <a href="https://www.fiverr.com/vivek_027/" target="_blank" rel="noopener noreferrer" class="btn btn-outline">Hire on Fiverr</a>
+        <a href="#" class="btn btn-outline" style="border-color:var(--accent); color:var(--accent)">Resume</a>
       </div>
       <div class="hero-stats">
         <div>
@@ -385,7 +391,10 @@ footer{text-align:center;padding:2.5rem 5vw;border-top:1px solid var(--border);f
       <div class="project-tags">
         <span class="tag">Django</span><span class="tag">Python</span><span class="tag">SQLite</span><span class="tag">Tailwind</span>
       </div>
-      <a href="https://github.com/vyom027/Propkart" class="project-link" target="_blank" rel="noopener noreferrer">Live Demo <span>→</span></a>
+      <div style="display:flex; gap:1.5rem">
+        <a href="https://github.com/vyom027/Propkart" class="project-link" target="_blank" rel="noopener noreferrer">Live Demo <span>→</span></a>
+        <a href="javascript:void(0)" onclick="openModal('modal-propkart')" class="project-link">View Details <span>→</span></a>
+      </div>
     </div>
 
     <div class="project-card tilt-card" data-cat="backend">
@@ -540,6 +549,53 @@ footer{text-align:center;padding:2.5rem 5vw;border-top:1px solid var(--border);f
         <div class="screenshot-item"><img src="screenshots/worker_dashboard.png" alt="Worker Portal" onerror="this.parentElement.style.background='var(--bg3)'"></div>
         <div class="screenshot-item"><img src="screenshots/denim_roll.png" alt="Inventory" onerror="this.parentElement.style.background='var(--bg3)'"></div>
         <div class="screenshot-item"><img src="screenshots/daily_report.png" alt="Reports" onerror="this.parentElement.style.background='var(--bg3)'"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- PROPKART MODAL -->
+<div class="modal-overlay" id="modal-propkart">
+  <div class="modal-content">
+    <button class="modal-close" onclick="closeModal('modal-propkart')">ESC ✕</button>
+    <div class="modal-header">
+      <div class="featured-badge">Web Application</div>
+      <h2>Propkart</h2>
+      <div class="subtitle">Modern Property Management & Marketplace</div>
+    </div>
+    <div class="modal-grid">
+      <div class="modal-body">
+        <h3>Overview</h3>
+        <p>A Django-based real estate platform that streamlines the process of buying, selling, and managing properties. Built with a focus on role-based access control and a clean, responsive user experience using Tailwind CSS.</p>
+        <h3>Key Features</h3>
+        <ul class="feature-list">
+          <li class="feature-item"><b>Marketplace</b> Complete listing management for sellers with image uploads.</li>
+          <li class="feature-item"><b>Admin Control</b> Comprehensive dashboard for property verification and user management.</li>
+          <li class="feature-item"><b>Analytics</b> Real-time tracking of inquiries and property views.</li>
+          <li class="feature-item"><b>Responsive</b> Fully adaptive design for mobile and desktop property browsing.</li>
+        </ul>
+        <h3>Tech Stack</h3>
+        <div class="tech-stack-modal">
+          <span class="tech-pill">Django 5.2</span>
+          <span class="tech-pill">Python</span>
+          <span class="tech-pill">Tailwind CSS</span>
+          <span class="tech-pill">SQLite</span>
+          <span class="tech-pill">Django Templates</span>
+        </div>
+      </div>
+      <div class="screenshot-gallery">
+        <div class="screenshot-item" style="display:flex; align-items:center; justify-content:center; background:var(--bg3); color:var(--muted); font-family:var(--mono); font-size:.7rem; text-align:center; padding:2rem">
+          [ Marketplace Dashboard ]
+        </div>
+        <div class="screenshot-item" style="display:flex; align-items:center; justify-content:center; background:var(--bg3); color:var(--muted); font-family:var(--mono); font-size:.7rem; text-align:center; padding:2rem">
+          [ Property Search ]
+        </div>
+        <div class="screenshot-item" style="display:flex; align-items:center; justify-content:center; background:var(--bg3); color:var(--muted); font-family:var(--mono); font-size:.7rem; text-align:center; padding:2rem">
+          [ Seller Portal ]
+        </div>
+        <div class="screenshot-item" style="display:flex; align-items:center; justify-content:center; background:var(--bg3); color:var(--muted); font-family:var(--mono); font-size:.7rem; text-align:center; padding:2rem">
+          [ Inquiry Tracking ]
+        </div>
       </div>
     </div>
   </div>
